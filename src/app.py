@@ -3,10 +3,15 @@ import os
 import sys
 import io
 from contextlib import redirect_stdout
+from dotenv import load_dotenv
 
 # This import handling block ensures the app can find the 'src' modules.
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
+
+# Load environment variables from the .env file at the project root
+# This is the crucial fix. It must be called before any agent is initialized.
+load_dotenv()
 
 from src.agents.manager_agent import ManagerAgent
 
