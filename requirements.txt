@@ -12,3 +12,6 @@ openai
 
 # For AI-optimized web search
 tavily-python
+
+# For creating the web-based user interface
+streamlit
