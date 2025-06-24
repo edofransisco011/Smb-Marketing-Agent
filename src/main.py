@@ -3,9 +3,6 @@ import sys
 from dotenv import load_dotenv
 
 # --- Fix for ModuleNotFoundError ---
-# This is the standard way to solve import issues in Python projects.
-# It adds the project's 'src' directory to the Python path.
-# Now, Python will look for modules inside 'src', which is what we want.
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
 # ------------------------------------
@@ -18,7 +15,12 @@ def main():
     """
     load_dotenv()
     
-    print("--- AI Social Media Agent Initialized ---")
+    # --- TEMPORARY DEBUG LINE ---
+    # Let's print the key to see if it's being loaded. We'll remove this later.
+    print(f"DEBUG: Loaded QWEN_API_KEY: {os.getenv('QWEN_API_KEY')}")
+    # ----------------------------
+
+    print("\n--- AI Social Media Agent Initialized ---")
     
     agent = SocialMediaAgent()
     
