@@ -1,0 +1,7 @@
+business_name: "The Daily Grind"
+business_type: "A cozy, local coffee shop"
+target_audience: "Local students, remote workers, and coffee enthusiasts"
+brand_voice: "Friendly, witty, and slightly quirky. We love coffee puns."
+location: "A vibrant neighborhood near a university campus"
+products: "Artisanal coffee, specialty teas, fresh pastries, sandwiches, free Wi-Fi"
+weekly_special: "20% off our new 'Volcano' Dark Roast blend"
