@@ -1,10 +1,9 @@
 import os
 import json
 from openai import OpenAI
-# NEW - Using absolute imports from the 'src' root
-from tools.web_search import search_local_trends, search_local_trends_schema
-from tools.social_api import post_to_instagram, post_to_instagram_schema
-
+# NEW - Explicitly tells Python to look inside the 'src' folder
+from src.tools.web_search import search_local_trends, search_local_trends_schema
+from src.tools.social_api import post_to_instagram, post_to_instagram_schema
 class SocialMediaAgent:
     """
     The SocialMediaAgent is a specialized AI agent responsible for creating
