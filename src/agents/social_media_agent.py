@@ -1,8 +1,9 @@
 import os
 import json
 from openai import OpenAI
-from ..tools.web_search import search_local_trends, search_local_trends_schema
-from ..tools.social_api import post_to_instagram, post_to_instagram_schema
+# NEW - Using absolute imports from the 'src' root
+from tools.web_search import search_local_trends, search_local_trends_schema
+from tools.social_api import post_to_instagram, post_to_instagram_schema
 
 class SocialMediaAgent:
     """
