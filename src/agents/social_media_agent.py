@@ -16,8 +16,7 @@ class SocialMediaAgent:
         # We point the OpenAI client to the Alibaba Cloud Dashscope endpoint.
         self.client = OpenAI(
             api_key=os.getenv("QWEN_API_KEY"),
-            base_url="https://dashscope.aliyuncs.com/compatible-mode/v1"
-        )
+            base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1")
         # Load the business profile to provide context to the agent
         self.business_profile = self._load_business_profile()
         # Define the tools the agent has access to
