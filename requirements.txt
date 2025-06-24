@@ -1,0 +1,11 @@
+# For loading environment variables from the .env file
+python-dotenv
+
+# For making HTTP requests to APIs
+requests
+
+# To allow our Jupyter Notebook to use this virtual environment
+ipykernel
+
+# The standard client for interacting with OpenAI-compatible APIs
+openai
