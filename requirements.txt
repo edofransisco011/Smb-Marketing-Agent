@@ -9,3 +9,6 @@ ipykernel
 
 # The standard client for interacting with OpenAI-compatible APIs
 openai
+
+# For AI-optimized web search
+tavily-python
